@@ -3,9 +3,9 @@
 
 int bsearch(int array[],int arraysize,int lookfor){
     if(arraysize==0) return -1;
-    int begin(0),end(arraysize);
+    int begin=0,end=arraysize;
 
-    int middle(arraysize/2),premiddle(0);
+    int middle=arraysize/2,premiddle=0;
     while(middle<arraysize){
         middle=begin+(end-begin)/2;
 
@@ -36,9 +36,9 @@ int main()
     int res=bsearch(ar,11,s);
 
     if(res>=0)
-        printf("first bigger than %d placed on %d position",s,res);
+        printf("first bigger than %d placed on %d position\n",s,res);
     else
-        printf("bigger than %d not found",s);
+        printf("bigger than %d not found\n",s);
 
     return 0;
 }

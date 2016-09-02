@@ -3,7 +3,7 @@ QT -= gui
 
 
 TARGET = bsch
-CONFIG += console
+CONFIG += static
 CONFIG -= app_bundle
 
 TEMPLATE = app
